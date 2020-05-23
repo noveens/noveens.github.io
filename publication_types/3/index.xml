@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 11 Feb 2019 01:47:17 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 01:47:17 -0400</lastBuildDate>
     
 	<atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Off-policy Bandits with Deficient Support</title>
+      <link>/publication/kdd_20/</link>
+      <pubDate>Sat, 16 May 2020 01:47:17 -0400</pubDate>
+      
+      <guid>/publication/kdd_20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Useful are Reviews for Recommendation? A Critical Review and Potential Improvements</title>
+      <link>/publication/sigir_20/</link>
+      <pubDate>Thu, 23 Apr 2020 01:47:17 -0400</pubDate>
+      
+      <guid>/publication/sigir_20/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sequential Variational Autoencoders for Collaborative Filtering</title>

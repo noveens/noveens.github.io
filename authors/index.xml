@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 11 Feb 2019 01:47:17 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 01:47:17 -0400</lastBuildDate>
     
 	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Noveen Sachdeva</title>
+      <link>/authors/noveen-sachdeva/</link>
+      <pubDate>Sat, 16 May 2020 01:47:17 -0400</pubDate>
+      
+      <guid>/authors/noveen-sachdeva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thorsten Joachims</title>
+      <link>/authors/thorsten-joachims/</link>
+      <pubDate>Sat, 16 May 2020 01:47:17 -0400</pubDate>
+      
+      <guid>/authors/thorsten-joachims/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yi Su</title>
+      <link>/authors/yi-su/</link>
+      <pubDate>Sat, 16 May 2020 01:47:17 -0400</pubDate>
+      
+      <guid>/authors/yi-su/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Julian McAuley</title>
+      <link>/authors/julian-mcauley/</link>
+      <pubDate>Thu, 23 Apr 2020 01:47:17 -0400</pubDate>
+      
+      <guid>/authors/julian-mcauley/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ettore Ritacco</title>
@@ -27,15 +63,6 @@
       <pubDate>Mon, 11 Feb 2019 01:47:17 -0400</pubDate>
       
       <guid>/authors/giuseppe-manco/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Noveen Sachdeva</title>
-      <link>/authors/noveen-sachdeva/</link>
-      <pubDate>Mon, 11 Feb 2019 01:47:17 -0400</pubDate>
-      
-      <guid>/authors/noveen-sachdeva/</guid>
       <description></description>
     </item>
     

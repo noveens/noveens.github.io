@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Variational autoencoders were proven successful in domains suchas computer vision and speech processing. Their adoption for mod-eling user preferences is still unexplored, although recently it isstarting to gain attention in the current literature. In this work, wepropose a model which extends variational autoencoders by exploit-ing the rich information present in the past preference history. Weintroduce a recurrent version of the VAE, where instead of passinga subset of the whole history regardless of temporal dependencies,we rather pass the consumption sequence subset through a recur-rent neural network. At each time-step of the RNN, the sequence isfed through a series of fully-connected layers, the output of whichmodels the probability distribution of the most likely future prefer-ences. We show that handling temporal information is crucial forimproving the accuracy of the VAE: In fact, our model beats thecurrent state-of-the-art by valuable margins because of its abilityto capture temporal dependencies among the user-consumption se-quence using the recurrent encoder still keeping the fundamentalsof variational autoencoders intact.">
+  <meta name="description" content="We investigate a growing body of work that seeks to improve recommender systems through the use of review text. Generally, these papers argue that since reviews ‘explain’ users’ opinions, they ought to be useful to infer the underlying dimensions that predict ratings or purchases. Schemes to incorporate reviews range from simple regularizers to neural network approaches. Our initial findings reveal several discrepancies in reported results, partly due to (e.g.) copying results across papers despite changes in experimental settings or data pre-processing. First, we attempt a comprehensive analysis to resolve these ambiguities. Further investigation calls for discussion on a much larger problem about the &#39;&#39;importance&#39;&#39; of user reviews for recommendation. Through a wide range of experiments, we observe several cases where state-of-the-art methods fail to outperform existing baselines, especially as we deviate from a few narrowly-defined settings where reviews are useful. We conclude by providing hypotheses for our observations, that seek to characterize under what conditions reviews are likely to be helpful. Through this work, we aim to evaluate the direction in which the field is progressing and encourage robust empirical evaluation">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/wsdm_19/">
+  <link rel="alternate" hreflang="en-us" href="/publication/sigir_20/">
 
   
 
@@ -110,7 +110,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/wsdm_19/">
+  <link rel="canonical" href="/publication/sigir_20/">
 
   
   
@@ -124,26 +124,26 @@
   <meta property="twitter:creator" content="@noveens97">
   
   <meta property="og:site_name" content="Noveen Sachdeva">
-  <meta property="og:url" content="/publication/wsdm_19/">
-  <meta property="og:title" content="Sequential Variational Autoencoders for Collaborative Filtering | Noveen Sachdeva">
-  <meta property="og:description" content="Variational autoencoders were proven successful in domains suchas computer vision and speech processing. Their adoption for mod-eling user preferences is still unexplored, although recently it isstarting to gain attention in the current literature. In this work, wepropose a model which extends variational autoencoders by exploit-ing the rich information present in the past preference history. Weintroduce a recurrent version of the VAE, where instead of passinga subset of the whole history regardless of temporal dependencies,we rather pass the consumption sequence subset through a recur-rent neural network. At each time-step of the RNN, the sequence isfed through a series of fully-connected layers, the output of whichmodels the probability distribution of the most likely future prefer-ences. We show that handling temporal information is crucial forimproving the accuracy of the VAE: In fact, our model beats thecurrent state-of-the-art by valuable margins because of its abilityto capture temporal dependencies among the user-consumption se-quence using the recurrent encoder still keeping the fundamentalsof variational autoencoders intact."><meta property="og:image" content="/img/myself">
+  <meta property="og:url" content="/publication/sigir_20/">
+  <meta property="og:title" content="How Useful are Reviews for Recommendation? A Critical Review and Potential Improvements | Noveen Sachdeva">
+  <meta property="og:description" content="We investigate a growing body of work that seeks to improve recommender systems through the use of review text. Generally, these papers argue that since reviews ‘explain’ users’ opinions, they ought to be useful to infer the underlying dimensions that predict ratings or purchases. Schemes to incorporate reviews range from simple regularizers to neural network approaches. Our initial findings reveal several discrepancies in reported results, partly due to (e.g.) copying results across papers despite changes in experimental settings or data pre-processing. First, we attempt a comprehensive analysis to resolve these ambiguities. Further investigation calls for discussion on a much larger problem about the &#39;&#39;importance&#39;&#39; of user reviews for recommendation. Through a wide range of experiments, we observe several cases where state-of-the-art methods fail to outperform existing baselines, especially as we deviate from a few narrowly-defined settings where reviews are useful. We conclude by providing hypotheses for our observations, that seek to characterize under what conditions reviews are likely to be helpful. Through this work, we aim to evaluate the direction in which the field is progressing and encourage robust empirical evaluation"><meta property="og:image" content="/img/myself">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-06-02T01:47:17-04:00">
+  <meta property="article:published_time" content="2020-04-23T01:47:17-04:00">
   
-  <meta property="article:modified_time" content="2019-02-11T01:47:17-04:00">
+  <meta property="article:modified_time" content="2020-04-23T01:47:17-04:00">
   
-
-  
-
 
   
 
 
+  
 
 
 
-  <title>Sequential Variational Autoencoders for Collaborative Filtering | Noveen Sachdeva</title>
+
+
+  <title>How Useful are Reviews for Recommendation? A Critical Review and Potential Improvements | Noveen Sachdeva</title>
 
 </head>
 
@@ -402,7 +402,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Sequential Variational Autoencoders for Collaborative Filtering</h1>
+  <h1 itemprop="name">How Useful are Reviews for Recommendation? A Critical Review and Potential Improvements</h1>
 
   
 
@@ -411,8 +411,8 @@
 
 
 
-<meta content="2019-02-11 01:47:17 -0400 -0400" itemprop="datePublished">
-<meta content="2019-02-11 01:47:17 -0400 -0400" itemprop="dateModified">
+<meta content="2020-04-23 01:47:17 -0400 -0400" itemprop="datePublished">
+<meta content="2020-04-23 01:47:17 -0400 -0400" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -425,7 +425,7 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/noveen-sachdeva/">Noveen Sachdeva</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/giuseppe-manco/">Giuseppe Manco</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/ettore-ritacco/">Ettore Ritacco</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/vikram-pudi/">Vikram Pudi</a></span>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/noveen-sachdeva/">Noveen Sachdeva</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/julian-mcauley/">Julian McAuley</a></span>
 
   </div>
   
@@ -437,7 +437,7 @@
     
       
     
-    <time>February 2019</time>
+    <time>April 2020</time>
   </span>
   
 
@@ -457,35 +457,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Sequential%20Variational%20Autoencoders%20for%20Collaborative%20Filtering&amp;url=%2fpublication%2fwsdm_19%2f"
+         href="https://twitter.com/intent/tweet?text=How%20Useful%20are%20Reviews%20for%20Recommendation%3f%20A%20Critical%20Review%20and%20Potential%20Improvements&amp;url=%2fpublication%2fsigir_20%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fwsdm_19%2f"
+         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fsigir_20%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fwsdm_19%2f&amp;title=Sequential%20Variational%20Autoencoders%20for%20Collaborative%20Filtering"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fsigir_20%2f&amp;title=How%20Useful%20are%20Reviews%20for%20Recommendation%3f%20A%20Critical%20Review%20and%20Potential%20Improvements"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fwsdm_19%2f&amp;title=Sequential%20Variational%20Autoencoders%20for%20Collaborative%20Filtering"
+         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fsigir_20%2f&amp;title=How%20Useful%20are%20Reviews%20for%20Recommendation%3f%20A%20Critical%20Review%20and%20Potential%20Improvements"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Sequential%20Variational%20Autoencoders%20for%20Collaborative%20Filtering&amp;body=%2fpublication%2fwsdm_19%2f">
+         href="mailto:?subject=How%20Useful%20are%20Reviews%20for%20Recommendation%3f%20A%20Critical%20Review%20and%20Potential%20Improvements&amp;body=%2fpublication%2fsigir_20%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -523,7 +523,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1811.09975.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://cseweb.ucsd.edu/~jmcauley/pdfs/sigir20.pdf" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -536,7 +536,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/3289600.3291007" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/3397271.3401281" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -547,7 +547,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/noveens/svae_cf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/noveens/reviews4rec" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -576,7 +576,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Variational autoencoders were proven successful in domains suchas computer vision and speech processing. Their adoption for mod-eling user preferences is still unexplored, although recently it isstarting to gain attention in the current literature. In this work, wepropose a model which extends variational autoencoders by exploit-ing the rich information present in the past preference history. Weintroduce a recurrent version of the VAE, where instead of passinga subset of the whole history regardless of temporal dependencies,we rather pass the consumption sequence subset through a recur-rent neural network. At each time-step of the RNN, the sequence isfed through a series of fully-connected layers, the output of whichmodels the probability distribution of the most likely future prefer-ences. We show that handling temporal information is crucial forimproving the accuracy of the VAE: In fact, our model beats thecurrent state-of-the-art by valuable margins because of its abilityto capture temporal dependencies among the user-consumption se-quence using the recurrent encoder still keeping the fundamentalsof variational autoencoders intact.</p>
+    <p class="pub-abstract" itemprop="text">We investigate a growing body of work that seeks to improve recommender systems through the use of review text. Generally, these papers argue that since reviews ‘explain’ users’ opinions, they ought to be useful to infer the underlying dimensions that predict ratings or purchases. Schemes to incorporate reviews range from simple regularizers to neural network approaches. Our initial findings reveal several discrepancies in reported results, partly due to (e.g.) copying results across papers despite changes in experimental settings or data pre-processing. First, we attempt a comprehensive analysis to resolve these ambiguities. Further investigation calls for discussion on a much larger problem about the &lsquo;&lsquo;importance&rsquo;&rsquo; of user reviews for recommendation. Through a wide range of experiments, we observe several cases where state-of-the-art methods fail to outperform existing baselines, especially as we deviate from a few narrowly-defined settings where reviews are useful. We conclude by providing hypotheses for our observations, that seek to characterize under what conditions reviews are likely to be helpful. Through this work, we aim to evaluate the direction in which the field is progressing and encourage robust empirical evaluation</p>
     
 
     
@@ -610,7 +610,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>the 12th ACM International Conference on Web Search and Data Mining</em> (<strong>WSDM</strong>)</div>
+          <div class="col-12 col-md-9">In <em>the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval</em> (<strong>SIGIR</strong>)</div>
         </div>
       </div>
       <div class="col-md-1"></div>

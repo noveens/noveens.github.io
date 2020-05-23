@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Noveen Sachdeva&#39;s personal website">
+  <meta name="description" content="Learning effective contextual-bandit policies from past actions of a deployed system is highly desirable in many settings (e.g. voice assistants, recommendation, search), since it enables the reuse of large amounts of log data. State-of-the-art methods for such off-policy learning, however, are based on inverse propensity score (IPS) weighting. A key theoretical requirement of IPS weighting is that the policy that logged the data has &#39;&#39;full support&#39;&#39;, which means that it must put non-zero probability on choosing any action for any context. Unfortunately, many real-world systems produce support deficient data, especially when the action space is large, and we show how existing methods can fail catastrophically. To overcome this gap between theory and applications, we identify three approaches that provide various guarantees for IPS-based learning despite the inherent limitations of support-deficient data: restricting the action space, reward extrapolation, and restricting the policy space. We systematically analyze the statistical and computational properties of these three approaches, and we empirically evaluate their effectiveness in a series of experiments. In addition to providing the first systematic analysis of support-deficiency in contextual-bandit learning, we conclude with recommendations that provide practical guidance.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/authors/ettore-ritacco/">
+  <link rel="alternate" hreflang="en-us" href="/publication/kdd_20/">
 
   
 
@@ -105,15 +105,12 @@
   
 
   
-  <link rel="alternate" href="/authors/ettore-ritacco/index.xml" type="application/rss+xml" title="Noveen Sachdeva">
-  <link rel="feed" href="/authors/ettore-ritacco/index.xml" type="application/rss+xml" title="Noveen Sachdeva">
-  
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/authors/ettore-ritacco/">
+  <link rel="canonical" href="/publication/kdd_20/">
 
   
   
@@ -127,12 +124,14 @@
   <meta property="twitter:creator" content="@noveens97">
   
   <meta property="og:site_name" content="Noveen Sachdeva">
-  <meta property="og:url" content="/authors/ettore-ritacco/">
-  <meta property="og:title" content="Ettore Ritacco | Noveen Sachdeva">
-  <meta property="og:description" content="Noveen Sachdeva&#39;s personal website"><meta property="og:image" content="/img/myself">
+  <meta property="og:url" content="/publication/kdd_20/">
+  <meta property="og:title" content="Off-policy Bandits with Deficient Support | Noveen Sachdeva">
+  <meta property="og:description" content="Learning effective contextual-bandit policies from past actions of a deployed system is highly desirable in many settings (e.g. voice assistants, recommendation, search), since it enables the reuse of large amounts of log data. State-of-the-art methods for such off-policy learning, however, are based on inverse propensity score (IPS) weighting. A key theoretical requirement of IPS weighting is that the policy that logged the data has &#39;&#39;full support&#39;&#39;, which means that it must put non-zero probability on choosing any action for any context. Unfortunately, many real-world systems produce support deficient data, especially when the action space is large, and we show how existing methods can fail catastrophically. To overcome this gap between theory and applications, we identify three approaches that provide various guarantees for IPS-based learning despite the inherent limitations of support-deficient data: restricting the action space, reward extrapolation, and restricting the policy space. We systematically analyze the statistical and computational properties of these three approaches, and we empirically evaluate their effectiveness in a series of experiments. In addition to providing the first systematic analysis of support-deficiency in contextual-bandit learning, we conclude with recommendations that provide practical guidance."><meta property="og:image" content="/img/myself">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-02-11T01:47:17-04:00">
+  <meta property="article:published_time" content="2020-05-16T01:47:17-04:00">
+  
+  <meta property="article:modified_time" content="2020-05-16T01:47:17-04:00">
   
 
   
@@ -144,7 +143,7 @@
 
 
 
-  <title>Ettore Ritacco | Noveen Sachdeva</title>
+  <title>Off-policy Bandits with Deficient Support | Noveen Sachdeva</title>
 
 </head>
 
@@ -382,35 +381,279 @@
 </nav>
 
 
+  <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
   
 
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Ettore Ritacco</h1>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Off-policy Bandits with Deficient Support</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2020-05-16 01:47:17 -0400 -0400" itemprop="datePublished">
+<meta content="2020-05-16 01:47:17 -0400 -0400" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/noveen-sachdeva/">Noveen Sachdeva</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yi-su/">Yi Su</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/thorsten-joachims/">Thorsten Joachims</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>May 2020</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Off-policy%20Bandits%20with%20Deficient%20Support&amp;url=%2fpublication%2fkdd_20%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fkdd_20%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fkdd_20%2f&amp;title=Off-policy%20Bandits%20with%20Deficient%20Support"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fkdd_20%2f&amp;title=Off-policy%20Bandits%20with%20Deficient%20Support"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Off-policy%20Bandits%20with%20Deficient%20Support&amp;body=%2fpublication%2fkdd_20%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
 
-<section id="profile-page" class="pt-5">
-  <div class="container">
+  
+
+</div>
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://openreview.net/attachment?id=SklcyJBtvB&amp;name=original_pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Learning effective contextual-bandit policies from past actions of a deployed system is highly desirable in many settings (e.g. voice assistants, recommendation, search), since it enables the reuse of large amounts of log data. State-of-the-art methods for such off-policy learning, however, are based on inverse propensity score (IPS) weighting. A key theoretical requirement of IPS weighting is that the policy that logged the data has &lsquo;&lsquo;full support&rsquo;', which means that it must put non-zero probability on choosing any action for any context. Unfortunately, many real-world systems produce support deficient data, especially when the action space is large, and we show how existing methods can fail catastrophically. To overcome this gap between theory and applications, we identify three approaches that provide various guarantees for IPS-based learning despite the inherent limitations of support-deficient data: restricting the action space, reward extrapolation, and restricting the policy space. We systematically analyze the statistical and computational properties of these three approaches, and we empirically evaluate their effectiveness in a series of experiments. In addition to providing the first systematic analysis of support-deficiency in contextual-bandit learning, we conclude with recommendations that provide practical guidance.</p>
     
 
     
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+            <a href="/publication/#3">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
     
+
     
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Latest</h3>
-      <ul>
-        
-        <li>
-          <a href="/publication/wsdm_19/">Sequential Variational Autoencoders for Collaborative Filtering</a>
-        </li>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">(Research track) In <em>the 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</em> (<strong>KDD</strong>)</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/noveen-sachdeva/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
         
       </ul>
     </div>
   </div>
-  
-</section>
+
+
+
+
+  </div>
+</div>
+
+
 
       
 
