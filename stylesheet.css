@@ -120,7 +120,8 @@ name {
   font-size: 32px;
 }
 
-pre {
+/* BibTex */
+.content pre {
 	font-family:'Courier New', Courier, monospace;
 	font-size: 14px;
 	font-weight: 600;
@@ -128,11 +129,11 @@ pre {
 	padding-left:0px;
 }
 
-/* pre {
+.email_header {
   margin-top: 0px;
   padding-top: 5px;
-  
-} */
+  font-size: 16px; 
+}
 
 .one {
   width: 160px;
